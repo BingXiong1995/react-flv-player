@@ -1,6 +1,6 @@
 {
   "name": "react-flv-player",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A React Component to play flv video",
   "main": "build/index.js",
   "scripts": {
