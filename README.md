@@ -15,14 +15,14 @@ import {ReactFlvPlayer} from 'react-flv-player'
 class Index extends Component {
   constructor(props) {
     super(props);
-    this.state = {url:"http://play.flv.feifeilink.com/video/2.flv"}
+    this.state = {url:"http://xxx/xxx/xxx.flv"}
   }
 
   render() {
     return (
       <div>
         <ReactFlvPlayer
-          url = {this.state.url}
+          url = "http://xxx/xxx/xxx.flv"
           heigh = "800px"
           width = "800px"
           isMuted={true}
@@ -35,7 +35,7 @@ class Index extends Component {
 export default Index;
 ```
 
-### API
+### Props
 | Field              | Type                  | Default  | Description                              |
 | ------------------ | --------------------- | ---------|------------------------------- |
 | `type`             | `string`              |     `flv`     |Indicates media type, `'flv'` or `'mp4'` |
@@ -44,4 +44,7 @@ export default Index;
 | `hasVideo?`        | `boolean`             | `true`           |Indicates whether the stream has video track |
 | `url?`             | `string`              |   `url`       |Indicates media URL, can be starts with `'https(s)'` or `'ws(s)'` (WebSocket) |
 | `enableStashBuffer?`             | `boolean` | `true`                       | Enable IO stash buffer. Set to false if you need realtime (minimal latency) for live stream |
-| `stashInitialSize?`              | `number`  | `128KB`                      | Indicates IO stash buffer initial size. Default is `384KB`. Indicate a suitable size can improve video load/seek time. |
+| `stashInitialSize?`              | `number`  | `128`        (KB)              | Indicates IO stash buffer initial size. Default is `384KB`. Indicate a suitable size can improve video load/seek time. |
+| `height?`              | `px or %`  | `required`                      |  |
+| `width?`              | `px or %`  | `required`                      |  |
+| `isMuted?`              | `boolean`  | `required`                      | Indicates audio output when init the video |
