@@ -1,7 +1,7 @@
 {
   "name": "react-flv-player",
   "version": "1.0.4",
-  "description": "A React component to render a form that collects Stripe Connect information.",
+  "description": "A React Component to play flv video",
   "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keithweaver/react-stripe-connect-form.git"
+    "url": "https://github.com/BingXiong1995/react-flv-player"
   },
-  "author": "Keith Weaver <me@keithweaver.ca> (https://github.com/keithweaver)",
+  "author": "Bing Xiong(bingxiong666@gmail)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keithweaver/react-stripe-connect-form/issues"
+    "url": "https://github.com/BingXiong1995/react-flv-player/issues"
   },
-  "homepage": "https://github.com/keithweaver/react-stripe-connect-form#readme",
+  "homepage": "https://github.com/BingXiong1995/react-flv-player#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
