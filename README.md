@@ -13,10 +13,6 @@ import React, { Component } from 'react';
 import {ReactFlvPlayer} from 'react-flv-player'
 
 class Index extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {url:"http://xxx/xxx/xxx.flv"}
-  }
 
   render() {
     return (
@@ -47,8 +43,8 @@ export default Index;
 | `url?`             | `string`              |   `url`       |Indicates media URL, can be starts with `'https(s)'` or `'ws(s)'` (WebSocket) |
 | `enableStashBuffer?`             | `boolean` | `true`                       | Enable IO stash buffer. Set to false if you need realtime (minimal latency) for live stream |
 | `stashInitialSize?`              | `number`  | `128`        (KB)              | Indicates IO stash buffer initial size. Default is `384KB`. Indicate a suitable size can improve video load/seek time. |
-| `height?`              | `px or %`  | `required`                      |  |
-| `width?`              | `px or %`  | `required`                      |  |
+| `height?`              | `px or %`  | `100%`                      |  |
+| `width?`              | `px or %`  | `100%`                      |  |
 | `isMuted?`              | `boolean`  | `required`                      | Indicates audio output when init the video |
 | `handleError?`              | `function`  | `(err)=>{console.log(err)}`                      |Handle errors, error type is enum |
 | `enableWarning?`        | `boolean`             | `false`           |Enable Warnings in Console|
