@@ -49,6 +49,8 @@ export default Index;
 | `width?`              | `px or %`  | `required`                      |  |
 | `isMuted?`              | `boolean`  | `required`                      | Indicates audio output when init the video |
 | `handleError?`              | `function`  | `(err)=>{console.log(err)}`                      |Handle errors, error type is enum |
+| `enableWarning?`        | `boolean`             | `false`           |Enable Warnings in Console|
+| `enableError?`        | `boolean`             | `false`           |Enable errors in Console|
 
 ### Errors
 ```
