@@ -48,3 +48,30 @@ export default Index;
 | `height?`              | `px or %`  | `required`                      |  |
 | `width?`              | `px or %`  | `required`                      |  |
 | `isMuted?`              | `boolean`  | `required`                      | Indicates audio output when init the video |
+| `handleError?`              | `function`  | `(err)=>{console.log(err)}`                      |Handle errors, error type is enum |
+
+### Errors
+```
+<ReactFlvPlayer
+  url={videoUrl}
+  isMuted
+  handleError={(err) => {
+  switch (err) {
+    case 'NetworkError':
+      // todo
+      console.log('network error');
+    break;
+    case 'MediaError':
+      console.log('network error');
+    break;
+    default:
+      console.log('other error');
+  }
+}}
+/>
+```
+| Error         | Description                              |
+| ------------- | ---------------------------------------- |
+| NETWORK_ERROR | Errors related to the network            |
+| MEDIA_ERROR   | Errors related to the media (format error, decode issue, etc) |
+| OTHER_ERROR   | Any other unspecified error              |
