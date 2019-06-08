@@ -34,6 +34,8 @@ class Index extends Component {
 
 export default Index;
 ```
+![image](http://bingxiong.vip/wp-content/uploads/2019/06/home.png)
+
 
 ### Props
 | Field              | Type                  | Default  | Description                              |
