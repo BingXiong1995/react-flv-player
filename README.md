@@ -36,6 +36,7 @@ export default Index;
 ### Props
 | Field              | Type                  | Default  | Description                              |
 | ------------------ | --------------------- | ---------|------------------------------- |
+| `showControls`     | `boolean`              |     `true`     | Indicates whether to show video controls or not |
 | `type`             | `string`              |     `flv`     |Indicates media type, `'flv'` or `'mp4'` |
 | `isLive?`          | `boolean`             |   `true`        |Indicates whether the data source is a **live stream** |
 | `hasAudio?`        | `boolean`             |     `true`      |Indicates whether the stream has audio track |
